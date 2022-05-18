@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '15.0'
 
 target 'SimpleExpandableView_Example' do
   pod 'SimpleExpandableView', :path => '../'

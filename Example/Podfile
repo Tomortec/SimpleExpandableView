@@ -4,10 +4,4 @@ platform :ios, '15.0'
 
 target 'SimpleExpandableView_Example' do
   pod 'SimpleExpandableView', :path => '../'
-
-  target 'SimpleExpandableView_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

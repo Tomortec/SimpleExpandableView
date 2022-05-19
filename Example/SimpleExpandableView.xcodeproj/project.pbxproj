@@ -23,13 +23,11 @@
 		0DF993632835F60E00DBB7EA /* GroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupExample.swift; sourceTree = "<group>"; };
 		12CF7E8F99E61974B8F58A67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		15FD4FC2BF61EC1B45E0864F /* SimpleExpandableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleExpandableView.podspec; path = ../SimpleExpandableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		4E065ABC3DF33B8F7EBF29D4 /* Pods-SimpleExpandableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleExpandableView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SimpleExpandableView_Tests/Pods-SimpleExpandableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SimpleExpandableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleExpandableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70C50D01EE65BBBC62B3BAC5 /* Pods_SimpleExpandableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleExpandableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7189861CD361A189190D71F2 /* Pods-SimpleExpandableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleExpandableView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SimpleExpandableView_Example/Pods-SimpleExpandableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7F18FFC3A61ED0145E2921E6 /* Pods-SimpleExpandableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleExpandableView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleExpandableView_Tests/Pods-SimpleExpandableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B96940CE70D9EB7409D5AB14 /* Pods-SimpleExpandableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleExpandableView_Example.release.xcconfig"; path = "Target Support Files/Pods-SimpleExpandableView_Example/Pods-SimpleExpandableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C3E44DD147DE875A5CFEE0C1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F0A03F581763EF605509932D /* Pods_SimpleExpandableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleExpandableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +102,6 @@
 			children = (
 				7189861CD361A189190D71F2 /* Pods-SimpleExpandableView_Example.debug.xcconfig */,
 				B96940CE70D9EB7409D5AB14 /* Pods-SimpleExpandableView_Example.release.xcconfig */,
-				7F18FFC3A61ED0145E2921E6 /* Pods-SimpleExpandableView_Tests.debug.xcconfig */,
-				4E065ABC3DF33B8F7EBF29D4 /* Pods-SimpleExpandableView_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";

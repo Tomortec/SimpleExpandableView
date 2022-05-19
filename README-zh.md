@@ -2,14 +2,12 @@
 
 <img src="./screenshot.png" alt="Banner" width="400">
 
-[中文说明](./README-zh.md)
-
 <img src="./demo.gif" alt="Demo" width="200"> 
 
-## ExpandableView structure
+## ExpandableView 结构
 <img src="./pic-structure.png" alt="Structure" width="400">
 
-## Example
+## 小示例
 
 ``` Swift
 ExpandableView(
@@ -32,49 +30,49 @@ ExpandableView(
 .cardBackgroundColor(.cyan)
 .shadow(shadowRadius: 0.0)
 .listRowSeparator(.hidden)
-.frame(maxWidth: .infinity) // align center
+.frame(maxWidth: .infinity) // 居中
 .padding(.vertical, 5.0)
 ```
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+克隆本仓库，在 `Example` 文件夹执行 `pod install` 后在 `Xcode` 运行示例项目来查看 demo
 
-## ExpandableView Interfaces
-### Initialization
+## ExpandableView 接口
+### 初始化
 ``` swift
 init(
     headerSize: CGSize,
     cardSize: CGSize,
     @ViewBuilder header: () -> Header,
     @ViewBuilder content: () -> Content,
-    onTapped action: (() -> ())? = nil // action to do when the header view is tapped
+    onTapped action: (() -> ())? = nil // 当 headerView 被点击时执行的操作
 )
 ```
 
-### Methods
+### 方法
 ``` swift
-// Change the background color of header view
+// 改变 header view 的背景颜色
 func headerBackgroundColor(_ color: Color)
 
-// Change the background color of the card view
+// 改变 card view 的背景颜色
 func cardBackgroundColor(_ color: Color)
 
-// Change the corner radius of the header view
+// 改变 header view 的圆角大小
 func headerCornerRadius(_ radius: CGFloat)
 
-// Change the corner radius of the card view
+// 改变 card view 的圆角大小
 func cardCornerRadius(_ radius: CGFloat)
 
-// Change the shadow of the whole view (both header view and card view will render shadow)
+// 设置 header view 和 card view 的阴影
 func shadow(shadowRadius: CGFloat = 6.0, color: Color = .gray, x: CGFloat = 0.0, y: CGFloat = 0.0)
 
-// Determine the height of the card view by the `contentView` you passed instead of a fixed height
+// 使用 content view 的高度来确定 card view 的高度
 func dynamicCardHeight()
 ```
 
-## ExpandableViewsGroup Interfaces
-### Initialization
+## ExpandableViewsGroup 接口
+### 初始化
 ``` swift
-// Share the same `headerView`
+// 所有 ExpandableView 使用相同的 `headerView`
 init<Header>(
     headerSize: CGSize,
     cardSize: CGSize,
@@ -82,7 +80,7 @@ init<Header>(
     contentViews: () -> [AnyView]
 ) where Header : View
 
-// Using generics
+// 使用泛型
 init<Header, Content>(
     headerSize: CGSize,
     cardSize: CGSize,
@@ -90,7 +88,7 @@ init<Header, Content>(
     contentViews: () -> [Content]
 )  where Header : View, Content : View
 
-// Using AnyView array
+// 使用 AnyView 数组
 init(
     headerSize: CGSize,
     cardSize: CGSize,
@@ -98,7 +96,7 @@ init(
     contentViews: () -> [AnyView]
 )
 
-// Using variadic parameters
+// 使用可变参数
 init(
     headerSize: CGSize,
     cardSize: CGSize,
@@ -107,52 +105,51 @@ init(
 )
 ```
 
-### Methods
+### 方法
 ``` swift
-// Set the vertical spacing between two `ExpandableView`
+// 设置两个 `ExpandableView` 之间的空间
 func verticalSpacing(_ spacing: CGFloat)
 
-// Change the background color of the group
+// 设置整个组的背景颜色
 func backgroundColor(_ color: Color)
 
-// Change the background color of all header views
+// 设置所有 header view 的背景颜色
 func headersBackgroundColor(_ color: Color)
 
-// Change the background color of all card views
+// 设置所有 card view 的背景颜色
 func cardBackgroundColor(_ color: Color)
 
-// Change the corner radius of all header views
+// 设置所有 header view 的圆角
 func headerCornerRadius(_ radius: CGFloat)
 
-// Change the corner radius of all card views
+// 设置所有 card view 的圆角
 func cardCornerRadius(_ radius: CGFloat)
 
-// Change the shadow of all views in the group (header views and card views included)
+// 设置所有 header view 和 card view 的阴影
 func shadow(shadowRadius: CGFloat = 6.0, color: Color = .gray, x: CGFloat = 0.0, y: CGFloat = 0.0)
 
-// Set all `ExpandableView` in the group with `.dynamicCardHeight()`
+// 将所有 `ExpandableView` 设置为 `.dynamicCardHeight()`
 func dynamicCardHeight()
 ```
 
-Execute Xcode's `Product > Build Documentation` and go to `SimpleExpandableView`'s documentation for more details.
+执行 Xcode 的 `Product > Build Documentation` 并前往文档中心来查看 `SimpleExpandableView` 的更多接口细节
 
-## Requirements
+## Swift 版本
 
 Swift >= 5.0
 
-## Installation
+## 安装方法
 
-SimpleExpandableView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+`SimpleExpandableView` 已在 [CocoaPods](https://cocoapods.org)发布。添加下列命令到你的 `Podfile` 来安装 `SimpleExpandableView`:
 
 ```ruby
 pod 'SimpleExpandableView'
 
-# Note that if cocoapods cannot find `SimpleExpandableView`, please try the command below
+# 注意：如果您的 pod 没找到 `SimpleExpandableView`, 请使用下面的命令重试
 # pod `SimpleExpandableView`, :git => 'https://github.com/Tomortec/SimpleExpandableView.git'
 ```
 
-## Author
+## 作者
 
 Tomortec, everything@tomortec.com
 

@@ -9,34 +9,22 @@
 Pod::Spec.new do |s|
   s.name             = 'SimpleExpandableView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SimpleExpandableView.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = '`SimpleExpandableView` is a SwiftUI view which can collapse and expand the content'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  `SimpleExpandableView` is a SwiftUI view which can collapse the detail content and expand it when you want .
+  You can easily change the appearance of the view as you want.
+ This view is concise and easy to modify
                        DESC
 
-  s.homepage         = 'https://github.com/36720212/SimpleExpandableView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Tomortec/SimpleExpandableView'
+   s.screenshots     = './screenshot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '36720212' => 'everything@tomortec.com' }
-  s.source           = { :git => 'https://github.com/36720212/SimpleExpandableView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Tomortec' => 'everything@tomortec.com' }
+  s.source           = { :git => 'https://github.com/Tomortec/SimpleExpandableView.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.6'
+  s.ios.deployment_target = '15.0'
 
   s.source_files = 'SimpleExpandableView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SimpleExpandableView' => ['SimpleExpandableView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

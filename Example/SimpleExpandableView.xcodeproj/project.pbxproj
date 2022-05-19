@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0DAAE6F02834DE3A00AE4687 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAE6EF2834DE3A00AE4687 /* ExampleApp.swift */; };
 		0DAAE6F22834DE6500AE4687 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAAE6F12834DE6500AE4687 /* ContentView.swift */; };
+		0DF993622835EE6B00DBB7EA /* ComponentExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF993612835EE6B00DBB7EA /* ComponentExample.swift */; };
+		0DF993642835F60E00DBB7EA /* GroupExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF993632835F60E00DBB7EA /* GroupExample.swift */; };
 		0EA6188F553010C31FE56744 /* Pods_SimpleExpandableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A03F581763EF605509932D /* Pods_SimpleExpandableView_Example.framework */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 /* End PBXBuildFile section */
@@ -17,6 +19,8 @@
 		0DAAE6EE2834DE3A00AE4687 /* SimpleExpandableView_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleExpandableView_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		0DAAE6EF2834DE3A00AE4687 /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
 		0DAAE6F12834DE6500AE4687 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0DF993612835EE6B00DBB7EA /* ComponentExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentExample.swift; sourceTree = "<group>"; };
+		0DF993632835F60E00DBB7EA /* GroupExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupExample.swift; sourceTree = "<group>"; };
 		12CF7E8F99E61974B8F58A67 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		15FD4FC2BF61EC1B45E0864F /* SimpleExpandableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SimpleExpandableView.podspec; path = ../SimpleExpandableView.podspec; sourceTree = "<group>"; };
 		4E065ABC3DF33B8F7EBF29D4 /* Pods-SimpleExpandableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleExpandableView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SimpleExpandableView_Tests/Pods-SimpleExpandableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				0DAAE6EF2834DE3A00AE4687 /* ExampleApp.swift */,
 				0DAAE6EE2834DE3A00AE4687 /* SimpleExpandableView_Example-Bridging-Header.h */,
 				0DAAE6F12834DE6500AE4687 /* ContentView.swift */,
+				0DF993612835EE6B00DBB7EA /* ComponentExample.swift */,
+				0DF993632835F60E00DBB7EA /* GroupExample.swift */,
 			);
 			name = "Example for SimpleExpandableView";
 			path = SimpleExpandableView;
@@ -230,7 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF993622835EE6B00DBB7EA /* ComponentExample.swift in Sources */,
 				0DAAE6F22834DE6500AE4687 /* ContentView.swift in Sources */,
+				0DF993642835F60E00DBB7EA /* GroupExample.swift in Sources */,
 				0DAAE6F02834DE3A00AE4687 /* ExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

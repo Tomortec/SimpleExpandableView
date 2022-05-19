@@ -1,0 +1,6 @@
+framework module SimpleExpandableView {
+  umbrella header "SimpleExpandableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

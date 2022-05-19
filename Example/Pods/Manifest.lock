@@ -1,0 +1,16 @@
+PODS:
+  - SimpleExpandableView (0.1.0)
+
+DEPENDENCIES:
+  - SimpleExpandableView (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleExpandableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleExpandableView: ea5ac489a8a1b73322d7b1c801718a5e82861486
+
+PODFILE CHECKSUM: 03bbe677a9042d7c34121e565976be7997807b71
+
+COCOAPODS: 1.11.0

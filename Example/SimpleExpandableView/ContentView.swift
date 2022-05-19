@@ -38,7 +38,56 @@ struct ContentView: View {
 //                }
 //            }
 //        }
-        EmptyView()
+//        List {
+//            ForEach(0 ..< 5) {
+//                _ in
+//                ExpandableView(
+//                    headerSize: CGSize(width: 250.0, height: 50.0),
+//                    cardSize: CGSize(width: 250.0, height: 250.0), header: {
+//                        Text("Hello world")
+//                            .foregroundColor(.white)
+//                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                            .background(LinearGradient(colors: [.blue, .cyan], startPoint: .top, endPoint: .bottom))
+//                    }, content: {
+//                        VStack {
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .frame(width: 180, height: 180)
+//                            Text("Hi")
+//                                .font(.title2)
+//                        }
+//                        .foregroundColor(.white)
+//                    })
+//                .cardBackgroundColor(.cyan)
+//                .shadow(shadowRadius: 0.0)
+//                .listRowSeparator(.hidden)
+//                .frame(maxWidth: .infinity) // align center
+//                .padding(.vertical, 5.0)
+//            }
+//        }
+//
+        ExpandableViewsGroup(
+            headerSize: CGSize(width: 200, height: 50),
+            cardSize: CGSize(width: 200, height: 200), headerViews: {
+                [AnyView(Text("Hi"))]
+            }, contentViews: {
+                Array(repeating: AnyView(Image(systemName: "heart.fill")), count: 5)
+            })
+        .verticalSpacing(20.0)
+        
+        ExpandableViewsGroup(
+            headerSize: CGSize(width: 200, height: 50),
+            cardSize: CGSize(width: 200, height: 200),
+            headerViews: AnyView(Text("Hello")), AnyView(Text("Hi")),
+            contentViews: AnyView(Text("With")), AnyView(Text("123")))
+        
+        ExpandableViewsGroup(
+            headerSize: CGSize(width: 200, height: 50),
+            cardSize: CGSize(width: 200, height: 200), headerViews: {
+                [Text("Hi")]
+            }, contentViews: {
+                [Text("Hello"), Text("123"), Text(";")]
+            })
     }
 }
 
